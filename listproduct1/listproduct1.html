@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Suppermarket</title>
+  <link rel="stylesheet" href="/productDetail.css">
+  <link rel="stylesheet" href="/icons/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id= "main">
+
+    <!-- header -->
+    <div id="header" class="navbar navbar-expand-lg fixed-top" style="height: 75px; background-color: rgb(51, 82, 88);">
+      <ul class="navbar-nav col-8" >
+        <a class="navbar-brand" href="#">
+          <img src="/img/logo.jpg" alt="">
+        </a>
+        <li class="nav-item"><a class="nav-link" href="/index.html">Trang chủ</a></li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nhà cung cấp</a>
+          <div class="dropdown-menu" style="background-color: #ccc;">
+            <a href="#" class="dropdown-item">Thịt mát Meat Deli</a>
+            <a href="#" class="dropdown-item">Dabaco Group</a>
+            <a href="#" class="dropdown-item">Owen</a>
+            <a href="#" class="dropdown-item">Louis Vuitton</a>
+            <a href="#" class="dropdown-item">Khác</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Đơn vị vận chuyển</a>
+          <div class="dropdown-menu" style="background-color: #ccc;">
+            <a href="#" class="dropdown-item">Giao hàng nhanh</a>
+            <a href="#" class="dropdown-item">VietNamPost</a>
+            <a href="#" class="dropdown-item">ViettelPost</a>
+            <a href="#" class="dropdown-item">khác</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#content">Nhà cung cấp nổi bật</a></li>
+      </ul>
+
+      <div class="col-4">
+        <div class="user" style="width: 180px;">
+          <a class="nav-link" href="/user.html">
+          Tài khoản 
+          <i class="ti-user"></i>
+        </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="jumbotron text-center">
+      <h1>Nhật Mart</h1> 
+      <p style="font-style: italic;">Đến với Nhật Mart, thực phẩm luôn tươi ngon, thời trang đa dạng, được cung cấp bởi các nhà cung cấp uy tín hàng đàu Việt Nam </p> 
+      <form>
+        <div class="input-group">
+          <input type="text" class="form-control"  placeholder="Tìm kiếm" required>
+          <div class="input-group-append">
+            <button type="button" class="btn btn-danger">search</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="content" style="height: 1500px; margin: 50px 10px 50px 10px;">
+        <div class="row">
+            <div class="row logo-meatDeli">
+                <img src="/img/meatDeli.png" alt="">
+            </div>
+            <div class="product m-auto">
+              <div class="mb-5 ml-2 bg-meat-deli">
+                  <div class="col-5"><p class="text-detail">Với ước mong mang đến cho mỗi gia đình sản phẩm thịt sạch, chất lượng với giá cả hợp lý, Masan MEAT Life đã hoàn thiện chuỗi giá trị đạm động vật từ hệ thống chăn nuôi khép kín đến nhà máy sản xuất thức ăn chăn nuôi chất lượng cao, nhà máy chế biến thịt và hệ thống phân phối giữ mát để đảm bảo sản phẩm thịt sạch MEATDeli đến tay người tiêu dùng với chất lượng thuần khiết theo công nghệ thịt mát từ Châu Âu.</p></div> 
+              </div>
+
+
+              <div class="row">
+                <div class="col-2">
+                  <a href="#"><img src="/img/product/meatDeli/baChi.jpg" alt=""></a>
+                  <p>Thịt ba chỉ<br> Giá: 50.000đ</p>
+                </div>
+                <div class="col-2">
+                  <a href="#"><img src="/img/product/meatDeli/thitxay.jpg" alt=""></a>
+                  <p>Thịt xay MeatDeli<br> Giá: 50.000đ</p>
+                </div>
+                <div class="col-2">
+                  <a href=""><img src="/img/product/meatDeli/canhga.jpg" alt=""></a>
+                  <p>Cánh gà<br> Giá: 15.000đ</p>
+                </div>
+                <div class="col-2">
+                  <a href=""><img src="/img/product/meatDeli/doiHeo.jpg" alt=""></a>
+                  <p>Dồi trường heo<br> Giá: 40.000đ</p>
+                </div>
+                <div class="col-2">
+                  <a href=""><img src="/img/product/meatDeli/suonthan.jpg" alt=""></a>
+                  <p>Sườn thăn<br> Giá: 60.000đ</p>
+                </div>
+                <div class="col-2">
+                  <a href=""><img src="/img/product/meatDeli/changio.jpg" alt=""></a>
+                  <p>Chân giò rút xương<br> Giá: 50.000đ</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-2">
+                  <a href=""><img src="/img/product/meatDeli/giothu.jpg" alt=""></a>
+                  <p>Giò thủ<br> Giá: 55.000đ</p>
+                </div>
+                <div class="col-2">
+                  <a href=""><img src="/img/product/meatDeli/xuongBun.jpg" alt=""></a>
+                  <p>Xương ống<br> Giá: 30.000đ</p>
+                </div>
+                <div class="col-2">
+                  <a href=""><img src="/img/product/meatDeli/MongGio.jpg" alt=""></a>
+                  <p>Móng giò<br> Giá: 35.000đ</p>
+                </div>
+                <div class="col-2">
+                  <a href=""><img src="/img/product/meatDeli/suonNon.jpg" alt=""></a>
+                  <p>Sườn non<br> Giá: 45.000đ</p>
+                </div>
+                <div class="col-2">
+                  <a href=""><img src="/img/product/meatDeli/nacvai.jpg" alt=""></a>
+                  <p>Nạc vai<br> Giá: 35.000đ</p>
+                </div>
+                <div class="col-2">
+                  <a href=""><img src="/img/product/meatDeli/taiheo.jpg" alt=""></a>
+                  <p>Tai heo<br> Giá: 25.000đ</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" style="width: 100%; height: 550px; background-color: #ccc;">
+      <h3 style="font-size: 40px; text-align: center; padding: 50px 0;">Liên hệ</h3>
+      <div class="row" style=" margin: 0 200px; height: 250px;">
+        <div class="col-4">
+          <h3 style="text-align: center; font-style: italic; padding: 15px 0;">Nhật Mart</h3>
+          <p style="text-align: justify; font-size: 17px; line-height: 25px;">Địa chỉ: Hà Đông - Hà Nội <br><br>Tổng
+            đài: 1800 555 555 <br><br>Đặt hàng: 1900 1880Hotline: 0123456789<br>Email:</p>crv.dvkh@vn.centralretail.com
+          </p>
+        </div>
+        <div class="col-4"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.344063358217!2d105.78319471488261!3d20.978840886025452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135adfc25f7d417%3A0x1c8ecb2fd27eedc6!2zVG9wcyBNYXJrZXQgSMOgIMSQw7RuZyAoQmlnIEMgSMOgIMSQw7RuZyk!5e0!3m2!1svi!2s!4v1635508618417!5m2!1svi!2s"
+            width="250px" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        <div class="col-4"><iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSuppermarket-100758459083968%2F%3Fref%3Dpages_you_manage&tabs=timeline&width=340&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="340" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

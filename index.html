@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Suppermarket</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./icons/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+
+    <!-- header -->
+    <div id="header" class="navbar navbar-expand-lg fixed-top" style="height: 75px; background-color: rgb(51, 82, 88);">
+      <ul class="navbar-nav col-8">
+        <a class="navbar-brand" href="#">
+          <img src="/img/logo.jpg" alt="">
+        </a>
+        <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nhà cung cấp</a>
+          <div class="dropdown-menu" style="background-color: #ccc;">
+            <a href="/listproduct1/listproduct1.html" class="dropdown-item">Thịt mát Meat Deli</a>
+            <a href="#" class="dropdown-item">Dabaco Group</a>
+            <a href="#" class="dropdown-item">Owen</a>
+            <a href="#" class="dropdown-item">Louis Vuitton</a>
+            <a href="#" class="dropdown-item">Khác</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Đơn vị vận chuyển</a>
+          <div class="dropdown-menu" style="background-color: #ccc;">
+            <a href="#" class="dropdown-item">Giao hàng nhanh</a>
+            <a href="#" class="dropdown-item">VietNamPost</a>
+            <a href="#" class="dropdown-item">ViettelPost</a>
+            <a href="#" class="dropdown-item">khác</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#content">Nhà cung cấp nổi bật</a></li>
+      </ul>
+
+      <div class="col-4">
+        <div class="user" style="width: 180px;">
+          <a class="nav-link" href="user.html">
+            Tài khoản
+            <i class="ti-user"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="jumbotron text-center">
+      <h1>Nhật Mart</h1>
+      <p style="font-style: italic;">Đến với Nhật Mart, thực phẩm luôn tươi ngon, thời trang đa dạng, được cung cấp bởi
+        các nhà cung cấp uy tín hàng đàu Việt Nam </p>
+      <form>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Tìm kiếm" required>
+          <div class="input-group-append">
+            <button type="button" class="btn btn-danger">search</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- slider -->
+    <div id="slider" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#slider" data-slide-to="0" class="active"></li>
+        <li data-target="#slider" data-slide-to="1"></li>
+        <li data-target="#slider" data-slide-to="2"></li>
+      </ul>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row" style="background-color: rgb(151, 204, 81);">
+            <ul class="col-4">
+              <li>
+                <p class="p1slider">Rau củ quả</p>
+              </li>
+              <li>
+                <div class="p2slider">
+                  <p>Luôn tươi ngon, đảm bảo vệ sinh an toàn thực phẩm</p>
+                </div>
+              </li>
+            </ul>
+            <div class="col-8"><img src="/img/slider1.jpg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row" style="background-color: rgb(151, 204, 81);">
+            <ul class="col-4">
+              <li>
+                <p class="p1slider">Thực phẩm</p>
+              </li>
+              <li>
+                <div class="p2slider">
+                  <p>Được cung cấp bởi những nhà cung cấp uy tín hàng đầu Việt Nam</p>
+                </div>
+              </li>
+            </ul>
+            <div class="col-8"><img src="/img/Slider2.jpg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row" style="background-color: rgb(151, 204, 81);">
+            <ul class="col-4">
+              <li>
+                <p class="p1slider">Vận chuyển</p>
+              </li>
+              <li>
+                <div class="p2slider">
+                  <p>Vận chuyển nhanh, tiết kiệm, đảm bảo an toàn</p>
+                </div>
+              </li>
+            </ul>
+            <div class="col-8"><img src="/img/slider3.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#slider" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#slider" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <!-- content -->
+    <div id="content">
+      <div id="provide1" class="provide">
+        <h3>Một số nhà cung cấp nổi tiếng</h3>
+        <h4 style="color: #ccc; text-align: center;">Nhà cung cấp thực phẩm</h4>
+        <div class="row">
+          <div class="col-4">
+            <img src="/img/meatDeli.png" alt="MeatDeli">
+            <p>Nhà cung cấp thực phẩm sạch hàng đầu Việt Nam, với công nghệ thịt mát Châu Âu sẽ đem đến những nguồn thực
+              phẩm tốt nhất cho người dùng</p>
+          </div>
+          <div class="col-4">
+            <img src="/img/dabaco.png" alt="Dabaco">
+            <p>TẬP ĐOÀN DABACO VIỆT NAM – đơn vị Anh hùng lao động thời kỳ đổi mới – là một Tập đoàn hoạt động đa ngành
+              nghề, trong đó, lĩnh vực chính là sản xuất thức ăn chăn nuôi, giống gia súc, gia cầm và chế biến thực
+              phẩm.</p>
+          </div>
+          <div class="col-4">
+            <img src="/img/farmfood.jpg" alt="farmfood">
+            <p>Farm Food là Công ty thực phẩm sạch đảm bảo chuẩn về chất lượng. Nguồn gốc và xuất xứ thực phẩm từ Nam
+              Cát Tiên.</p>
+          </div>
+        </div>
+        <h4 style="color: #ccc; text-align: center;">Nhà cung cấp thời trang</h4>
+        <div class="row">
+          <div class="col-4">
+            <img src="/img/louis-vuitton-logo.jpg" alt="Louis Vuitton">
+            <p>Công ty Louis Vuitton là một công ty và nhãn hiệu thời trang xa xỉ của Pháp, có trụ sở tại Paris, Pháp.
+              Đây là một ban của công ty cổ phần Pháp LVMH Louis Vuitton Moët Hennessy S.A</p>
+          </div>
+          <div class="col-4">
+            <img src="/img/owen.jpg" alt="Owen">
+            <p>OWEN là thương hiệu thời trang cao cấp dành cho nam giới, chuyên cung cấp các sản phẩm áo sơ mi, veston,
+              quần âu tiên phong sử dụng chất liệu công nghệ mới</p>
+          </div>
+          <div class="col-4">
+            <img src="/img/zara.png" alt="Zara">
+            <p>Zara là một thương hiệu quần áo và phụ kiện của Tây Ban Nha trụ sở tại Arteixo, Galicia. Công ty được
+              thành lập năm 1975 bởi Amancio Ortega và Rosalía Mera. Nó là thương hiệu chính của tập đoàn Inditex, nhà
+              bán lẻ thời trang lớn nhất thế giới</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="product1" class="product">
+        <h3>Một số sản phẩm nổi bật</h3>
+        <div class="row">
+          <div class="col-3">
+            <a href=""><img src="/img/product/meatDeli/baChi.jpg" alt=""></a>
+            <p>Thịt ba chỉ MeatDeli<br>Giá: 50.000đ</p>
+          </div>
+          <div class="col-3">
+            <a href=""><img src="/img/product/meatDeli/thitxay.jpg" alt=""></a>
+            <p>Thịt xay MeatDeli<br>Giá: 50.000đ</p>
+          </div>
+          <div class="col-3">
+            <a href=""><img src="/img/product/Dabaco/trungvoxanh.jpg" alt=""></a>
+            <p>Trứng vỏ xanh<br>Giá: 30.000đ</p>
+          </div>
+          <div class="col-3">
+            <a href=""><img src="/img/product/meatDeli/canhga.jpg" alt=""></a>
+            <p>Cánh gà<br>Giá: 15.000đ</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="color: #ccc; text-align: center;">Nhận xét của khách hàng</h2>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>"Thực phẩm tươi sạch, ngon miệng, đảm bảo vệ sinh"</p>
+            <h4>Nhật Nguyễn</h4>
+          </div>
+
+          <div class="carousel-item">
+            <p>"Thời gian giao hàng rất nhanh chóng và đảm bảo"</p>
+            <h4>Bun Nguyễn</h4>
+          </div>
+
+          <div class="carousel-item">
+            <p>"Mong siêu thị sẽ sớm ra mắt những mẫu áo mới cho mùa đông"</p>
+            <h4>Nam Nguyễn</h4>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer" style="width: 100%; height: 550px; background-color: #ccc;">
+      <h3 style="font-size: 40px; text-align: center; padding: 50px 0;">Liên hệ</h3>
+      <div class="row" style=" margin: 0 200px; height: 250px;">
+        <div class="col-4">
+          <h3 style="text-align: center; font-style: italic; padding: 15px 0;">Nhật Mart</h3>
+          <p style="text-align: justify; font-size: 17px; line-height: 25px;">Địa chỉ: Hà Đông - Hà Nội <br><br>Tổng
+            đài: 1800 555 555 <br><br>Đặt hàng: 1900 1880Hotline: 0123456789<br>Email:</p>crv.dvkh@vn.centralretail.com
+          </p>
+        </div>
+        <div class="col-4"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.344063358217!2d105.78319471488261!3d20.978840886025452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135adfc25f7d417%3A0x1c8ecb2fd27eedc6!2zVG9wcyBNYXJrZXQgSMOgIMSQw7RuZyAoQmlnIEMgSMOgIMSQw7RuZyk!5e0!3m2!1svi!2s!4v1635508618417!5m2!1svi!2s"
+            width="250px" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        <div class="col-4"><iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSuppermarket-100758459083968%2F%3Fref%3Dpages_you_manage&tabs=timeline&width=340&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="340" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
